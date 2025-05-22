@@ -133,3 +133,32 @@ console.log(tweet.text) // Output: "Hi from the tweet!"
 console.log(tweet["text"]) // Output: "Hi from the tweet!"
 
 console.log(tweet.isOffensive) // Output: false
+
+tweet.text = "keep it a string after reassigning"
+
+console.log(tweet) // Output: "hello this is my second tweet"
+
+tweet.image = "https://example.com/image.jpg"
+
+console.log(tweet) // output: image url added
+
+console.log(Object.keys(tweet))
+
+let tweetValues = Object.values(tweet)
+
+console.log(tweetValues[0]) // Output: array of values in the tweet object
+
+let countries = {
+    usa: "english",
+    spain: "spanish",
+    france: "french",
+    germany: "german",
+    italy: "italian",
+    "north korea": "korean",
+}
+
+console.log(countries)
+
+delete countries["north korea"]
+
+console.log(countries) // Output: { usa: 'english', spain: 'spanish', france: 'french', germany: 'german', italy: 'italian' }
