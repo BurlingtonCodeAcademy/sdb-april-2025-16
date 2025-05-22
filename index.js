@@ -95,7 +95,7 @@ console.log(garage[0].serviceHistory[1].notes)
 
 
 let tweet = {
-    text: "Hello, world!",
+    text: "Hi from the tweet!",
     user: {
         name: "John Doe",
         screen_name: "johndoe",
@@ -126,7 +126,10 @@ let tweet = {
     place: null,
     lang: "en",
     source: "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
-
+    isOffensive: false,
 }
 
-console.log(tweet)
+console.log(tweet.text) // Output: "Hi from the tweet!"
+console.log(tweet["text"]) // Output: "Hi from the tweet!"
+
+console.log(tweet.isOffensive) // Output: false
