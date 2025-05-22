@@ -92,9 +92,6 @@ let garage = [
 ]
 
 console.log(garage[0].serviceHistory[1].notes)
-console.log(garage[0].serviceHistory[1].cost)
-console.log(garage[0].serviceHistory[1].date)
-console.log(garage[0].serviceHistory[1].serviceType)
 
 
 let tweet = {
@@ -131,3 +128,5 @@ let tweet = {
     source: "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
 
 }
+
+console.log(tweet)
